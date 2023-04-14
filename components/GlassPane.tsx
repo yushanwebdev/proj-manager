@@ -6,7 +6,7 @@ interface IGlassPaneProps {
   className: string;
 }
 
-const GlassPane = ({ children, className }: IGlassPaneProps) => {
+export default function GlassPane({ children, className }: IGlassPaneProps) {
   return (
     <div
       className={clsx(
@@ -17,6 +17,4 @@ const GlassPane = ({ children, className }: IGlassPaneProps) => {
       {children}
     </div>
   );
-};
-
-export default GlassPane;
+}
